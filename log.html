@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+    <script src="log.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()"><b>Log In</b></button>
+                <button type="button" class="toggle-btn" onclick="register()"><b>Sign up</b></button>
+            </div>
+            <div class="social-icons">
+                <img src="fbip.jpg">
+                <img src="twip.jpg">
+                <img src="gpip.png">
+            </div>
+            <form id="login" class="input-grp"   >
+               <div input-group><input type="text" id="username"  class="input-field" placeholder="User Id" ><div class="error"></div></div>
+                <div input-group><input type="password" id="password" class="input-field" placeholder="Password"><div class="error"></div></div>
+                <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn" >Log in</button>
+            </form>
+            <form id="register" class="input-grp"   >
+               <div input-group><input type="text" id="username1"  class="input-field" placeholder="User Id" ><div class="error"></div></div>
+                <div input-group><input type="email" id="email1" class="input-field" placeholder="Email Id"><div class="error"></div></div>
+                <div input-group><input type="password" id="password1" class="input-field" placeholder="Password"><div class="error"></div></div>
+                <div input-group><input type="password" id="cpassword1" class="input-field" placeholder="Conform Password"><div class="error"></div></div>
+                <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn" >Sign up</button>
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left= "50px";
+            z.style.left= "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left= "450px";
+            z.style.left= "0px";
+        }
+    </script>
+</body>
+</html>
